@@ -11,7 +11,7 @@ function App() {
 
   useEffect(() => {
     if (gameStarted) {
-      const socket = new WebSocket('ws://localhost:8000');
+      const socket = new WebSocket('ws://kt-lotteria.onrender.com/');
   
       socket.onopen = () => {
         console.log('WebSocket connection opened');
